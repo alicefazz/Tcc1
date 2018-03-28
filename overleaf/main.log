@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.13)  28 MAR 2018 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.13)  28 MAR 2018 18:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1020,10 +1020,113 @@ LaTeX Info: Redefining \citen on input line 81.
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-)) (./fixos/comandos.tex) (./fixos/novoscomandos.tex) (./editaveis/informacoes.
-tex)
-(./fixos/informacoes.tex) (./fixos/setup.tex
-Package color Info: Redefining color blue on input line 1.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip270
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen159
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen160
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count171
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count172
+\leftroot@=\count173
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count174
+\DOTSCASE@=\count175
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen161
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count176
+\c@MaxMatrixCols=\count177
+\dotsspace@=\muskip11
+\c@parentequation=\count178
+\dspbrk@lvl=\count179
+\tag@help=\toks30
+\row@=\count180
+\column@=\count181
+\maxfields@=\count182
+\andhelp@=\toks31
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
+\@envbody=\toks32
+\multlinegap=\skip271
+\multlinetaggap=\skip272
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks34
+\minrowclearance=\skip273
+)
+LaTeX Info: Redefining \color on input line 709.
+\rownum=\count183
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen168
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count184
+\float@exts=\toks35
+\float@box=\box32
+\@float@everytoks=\toks36
+\@floatcapt=\box33
+))
+(./fixos/comandos.tex) (./fixos/novoscomandos.tex) (./editaveis/informacoes.tex
+) (./fixos/informacoes.tex) (./fixos/setup.tex
 Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 )
 \main@idxfile=\write4
@@ -1052,7 +1155,7 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 9.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box34
 Package hyperref Info: Link coloring ON on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1061,7 +1164,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count171
+\c@section@level=\count185
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1072,24 +1175,24 @@ LaTeX Info: Redefining \nameref on input line 9.
 LaTeX Info: Redefining \degres on input line 9.
 LaTeX Info: Redefining \dots on input line 9.
 LaTeX Info: Redefining \up on input line 9.
-\myptabbox=\box31
-\myptabboxwidth=\skip270
+\myptabbox=\box35
+\myptabboxwidth=\skip274
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 9.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count172
-\scratchdimen=\dimen159
-\scratchbox=\box32
-\nofMPsegments=\count173
-\nofMParguments=\count174
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count175
-\MPscratchDim=\dimen160
-\MPnumerator=\count176
-\makeMPintoPDFobject=\count177
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count186
+\scratchdimen=\dimen169
+\scratchbox=\box36
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen170
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1175,8 +1278,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 20.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.20 
@@ -1275,10 +1387,10 @@ LaTeX Warning: Citation `[' on page 3 undefined on input line 2.
 
 ]
 
-LaTeX Warning: Citation `INMETRO' on page 29 undefined on input line 7.
+LaTeX Warning: Citation `INMETRO' on page 29 undefined on input line 9.
 
 [29] [30]
-Overfull \hbox (10.07747pt too wide) in paragraph at lines 94--95
+Overfull \hbox (10.07747pt too wide) in paragraph at lines 95--96
 []\T1/lmr/m/n/12 O termo Qp cor-res-ponde a fonte de ca-lor de-vido à per-fu-sã
 o san-guí-nea que caracteriza-
  []
@@ -1295,25 +1407,25 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 122.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) ) 
 Here is how much of TeX's memory you used:
- 12646 strings out of 493013
- 183383 string characters out of 6135682
- 308911 words of memory out of 5000000
- 15830 multiletter control sequences out of 15000+600000
- 72767 words of font info for 51 fonts, out of 8000000 for 9000
+ 14060 strings out of 493013
+ 199818 string characters out of 6135682
+ 332613 words of memory out of 5000000
+ 17187 multiletter control sequences out of 15000+600000
+ 75247 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,38p,1001b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,13n,38p,1001b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/
@@ -1326,10 +1438,10 @@ ts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
 share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (34 pages, 394909 bytes).
+Output written on main.pdf (34 pages, 395455 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
  170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

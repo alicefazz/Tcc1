@@ -1,10 +1,12 @@
-\chapter*[Referencial Teórico]{Referencial Teórico}
-\addcontentsline{toc}{chapter}{Referencial Teórico}
+
+
+\chapter[Referencial Teórico]{Referencial Teórico}
 
 \section{Câncer de pele}
     Segundo a Sociedade Brasileira de Dermatologia(SBD):
+
 \begin{quotation}
-	O tipo  mais comum, o câncer da pele não melanoma, tem letalidade baixa, porém, seus números são muito altos. A doença é provocada pelo crescimento anormal e descontrolado das células que compõem a pele. Essas células se dispõem formando camadas e, de acordo com as que forem afetadas, são definidos os diferentes tipos de câncer. Os mais comuns são os carcinomas basocelulares e os espinocelulares. Mais raro e letal que os carcinomas, o melanoma é o tipo mais agressivo de câncer da pele.\cite{INMETRO}
+    	O tipo  mais comum, o câncer da pele não melanoma, tem letalidade baixa, porém, seus números são muito altos. A doença é provocada pelo crescimento anormal e descontrolado das células que compõem a pele. Essas células se dispõem formando camadas e, de acordo com as que forem afetadas, são definidos os diferentes tipos de câncer. Os mais comuns são os carcinomas basocelulares e os espinocelulares. Mais raro e letal que os carcinomas, o melanoma é o tipo mais agressivo de câncer da pele.\cite{INMETRO}
     %(http://www.sbd.org.br).
 \end{quotation}
                
@@ -62,13 +64,12 @@ A definição de temperatura em tecidos se dá por intermédio da transferência
 
  \subsection{Modelo físico-matemático}
 
-    Segundo GUIMARÃES (2003), a equação abaixo descreve a transferência de calor nos organismos vivos e é chamada de Equação de Pennes.
+    Segundo GUIMARÃES (2003), a equação abaixo descreve a transferência de calor nos organismos vivos e é chamada de Equação de Pennes. 
    %MODELAGEM COMPUTACIONAL DA BIOTRANSFERÊNCIA  DE CALOR NO  TRATAMENTO  POR HIPERTERMIA EM TUMORES DE DUODENO ATRAVÉS DO MÉTODO DOS VOLUMES FINITOS  EM MALHAS  NÃO-ESTRUTURADAS- UNIVERSIDADE FEDERAL DE PERNAMBUCO-CURSO DE PÓS-GRADUAÇÃO EM ENGENHARIA MECÂNICA-CARLA SIMONE CARDOSO GUIMARÃES , RECIFE, FEVEREIRO DE 2003;
+   
 
+  \begin{equation}\rho c\frac{\partial T}{\partial t} = Kt\nabla^{2}T+ Qp + Qm + Q \end{equation}
 
-
-$   \rho c$$\frac{\partial T}{\partial t} = Kt\nabla^{2}
-   T+ Qp + Qm + Q $
 
   onde:
 
@@ -93,8 +94,8 @@ $   \rho c$$\frac{\partial T}{\partial t} = Kt\nabla^{2}
 
        O termo Qp corresponde a fonte de calor devido à perfusão sanguínea que caracteriza-se pela transferência de calor efetuada pelo sangue através da vascularização capilar presente nos tecidos vivos,e representa um sumidouro de calor devido à remoção convectiva de calor efetuada pelo sangue através da vascularização capilar presente nos tecidos vivos(GUIMARÃES,2004).%CARLA SIMONE CARDOSO GUIMARÃES - MODELAGEM COMPUTACIONAL DA BIOTRANSFERÊNCIA DE CALOR NO  TRATAMENTO POR HIPERTERMIA EM TURMORES DE DUODENO ATRAVÉS DO MÉTODO  DOS VOLUMES FINITOS EM MALHAS NÃO-ESTRUTURADAS- UNIVERSIDADE FEDERAL DE PERNAMBUCO- CURSO DE PÓS-GRADUAÇÃO EM ENGNEHARIA MECÂNICA- RECIFE, FEVEREIRO DE 2003. De acordo com SILVA(2004),esse termo é dado pela equação 2:
 
-$
-     Qp = \omega\times\rho s\times cs\rho\times(Ta-Tv) $
+
+    \begin{equation} Qp= \omega\times\rho s\times cs\times\rho\times(Ta-Tv) \end{equation}
 
        Onde:
 
