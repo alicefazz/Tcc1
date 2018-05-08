@@ -1,0 +1,249 @@
+
+\chapter[Método da Decomposição]{Método da Decomposição de Adomian}
+
+\section{Introdução}
+
+   O Método da Decomposição de Adomian (ADM) não é uma técnica muito famosa em geral, mas é extremamente poderosa para solucionar equações diferenciais lineares ou não-lineares de diversos tipos. Tal método já foi utilizado com sucesso em diferentes estudos ao longo dos anos, dentre eles podemos citar o trabalho de Mustapha Azreg-Aïnou's - Developed Adomian method for quadratic Kaluza-Klein relativity, e de Antonio Gourlat e Bodmann -An analytical solution for the nonlinear energy spectrum equation by the decomposition method.
+   
+    De acordo com \apud{schneider}{Adriana}, o Método da Decomposição de Adomian foi apresentado pelo  matemático americano George Adomian (1922-1996) na década de 80. Tal método consiste em separar a equação em duas partes, a parte linear e a não-linear e em sequência aplicar o operador inverso. De acordo com Goulart et.al(2013) as soluções das equações são calculadas como séries infinitas e cada termo dessas séries é um polinômio generalizado chamado polinômio de Adomian.
+
+    
+   Em seu livro, Adomian (1956) afirma que o maior objetivo desse método é tornar viável soluções realistas de sistemas complexos sem a obrigação de utilizar-se da modelagem usual.
+   
+  Segundo Adomian (1988), a diferença é que o Método da Decomposição de Adomian pode fornecer aproximação analítica sem linearização, pertubação, aproximações de fechamento, ou métodos de discretização que podem resultar em complexos modelos computacionais.
+   ``Além disso, ao contrário da maioria dos métodos númericos, o Método da Decomposição de Adomian fornece uma forma fechada da solução''\apud{Dehghan}{Adriana}.
+
+  
+   
+
+\section{Descrição do Método} 
+ 
+ 
+ Considerando a seguinte equação diferencial não-linear:
+ 
+ \begin{equation}  \textbf{L}y +  \textbf{R}y +  \textbf{N}y = g\end{equation}
+
+Sendo que \textbf{L} é o operador derivativo de maior ordem, \textbf{R}y representa o termo linear, \textbf{N}y o termo não- linear e \textbf{g} o valor inicial. Resolvendo para \textbf{L}y,
+
+ \begin{equation}  \textbf{L}y =  g - \textbf{R}y - \textbf{N}y \end{equation}
+ 
+  Utilizando o operador inversor $L^{-1}$ , obtemos:
+  
+  \begin{equation}
+  L^{-1}Ly =  L^{-1}g -  L^{-1}Ry -  L^{-1}Ny
+  \end{equation}
+  
+  L é definido como L = $\dfrac{\partial^n }{\partial t^n}$ , então $L^{-1}$ é um operador integral de 0 até t,
+  \begin{equation}
+  L^{-1}= \int_0^{t} ...dt
+  \end{equation}
+  
+  Se L for de segunda-ordem, $\dfrac{\partial^2 }{\partial t^2}$ por exemplo, $L^{-1}$ será um operador de integração duplo . E a equação se resultará em:
+  
+  \begin{equation}
+  y= y(0) + ty'(0) + L^{-1}g - L^{-1}Ry - L^{-1}Ny
+  \end{equation}
+
+ Os dois primeiros termos são as condições iniciais, os três primeiros termos são identificados como  $y_{0}$ e os quatro primeiros termos são identificados como a parte linear da equação, sua decomposição é $\sum_{n=0}^{\infty} y_{n}$. Já Ny, o termo não-linear, é decomposto como $\sum_{n=0}^{\infty} A_{n}(y_{0},y_{1},...y_{n})$. A equação se torna:
+ 
+ \begin{equation}
+ \sum_{n=0}^{\infty} y_{n} = y_{0} - L^{-1}R \sum_{n=0}^{\infty} y_{n} - L^{-1}\sum_{n=0}^{\infty} A_{n}
+ \end{equation}
+ 
+ Consequentemente, podemos escrever,
+ 
+ \begin{equation}
+ y_{1} = -L^{-1} (Ry_{0}) - L^{-1}(A_{0}) \end{equation}
+ 
+ \begin{equation}y_{2} = -L^{-1} (Ry_{1}) - L^{-1}(A_{1})\end{equation}
+ 
+ \begin{equation}y_{3} = -L^{-1} (Ry_{2}) - L^{-1}(A_{2})
+ \end{equation}
+ 
+ \begin{equation}y_{n} = -L^{-1} (Ry_{n-1}) - L^{-1}(A_{n-1})
+ \end{equation}
+ 
+  De acordo com GOULART et.al (2013) os polinômios de Adomian An são obtidos a partir da expansão da série de Taylor do termo não-linear em torno do primeiro termo da série $y_{0}$. Dependem apenas de $y_{0}$ à $y_{n}$:
+  
+  \begin{equation}
+  A_{0} = f(y_{0})
+  \end{equation}
+  
+   \begin{equation}
+  A_{1} = y_{1}\left(\dfrac{\partial }{\partial y_{0}}\right) f(y_{0})
+  \end{equation}
+  
+  \begin{equation}
+  A_{2} = y_{2} \left(\dfrac{\partial }{\partial y_{0}}\right)f(y_{0}) +\left(\dfrac{y_{1}^2}{2!}\right)\left(\dfrac{\partial^2 }{\partial y_{0}^2}\right)f(y_{0})
+  \end{equation}
+ 
+   \begin{equation}
+  A_{3} = y_{3} \left(\dfrac{\partial }{\partial y_{0}}\right)f(y_{0}) + y_{1}y_{2}\left(\dfrac{\partial^2 }{\partial y_{0}^2}\right)f(y_{0}) + \left(\dfrac{y_{1}^3}{3!}\right)\left(\dfrac{\partial^3 }{\partial y_{0}^3}\right)f(y_{0})
+  \end{equation}
+  
+ \begin{equation}
+ ...
+ \end{equation}
+ 
+ \begin{equation}
+  A_{n} = \dfrac{1}{n!} \sum_{v=1}^{n} c(v,n)\left(\dfrac{\partial^vf }{\partial y^v}\right)
+ \end{equation}
+  
+  Quando a equação é linear, f(y) = y , o termo $A_{n}$ reduz para $y_{n}$. Quando a equação é não-linear, $A_{n} = A_{n} (y_{0}, y_{1},...,y_{n})$. Por exemplo $f(y) = y^3$, $A_{0} = y_{0}^3$, $A_{1} = 3y_{0}y_{1}$, $A_{2} = y1^2+3y_{0}y_{2}$, $A_{3} = 3y_{1}y_{2} + 3y_{0}y_{3},...$
+  
+  explicar c(v,n).....
+ 
+ 
+ \section{Exemplos}
+ 
+ Com o objetivo de simplificar o entendimento desse método, alguns exemplos de fácil compreensão serão demonstrados a seguir.
+ 
+ \subsection{Exemplo 1}
+ 
+ Considere a equacão linear
+ 
+ \begin{equation*}
+ y' = y 
+  \end{equation*}
+   \begin{equation*}
+ \dfrac{\partial y}{\partial x} = y
+ \end{equation*}
+com a condição linear y(0) = 1 , então
+
+\begin{equation*}
+ \textbf{L}y - \textbf{R}y = g
+  \end{equation*}
+  \begin{equation*}
+ \textbf{L}y = 1 + \textbf{R}y 
+  \end{equation*}
+  
+  Lembrando que L é o operador derivativo de maior ordem, que nesse caso é $\dfrac{\partial y}{\partial x}$, então o operador inverso é $L^{-1}=\int_0^{x}\dfrac{\partial y}{\partial x} dx$. Aplicando o operador inverso nos termos da equação, obtêm-se:
+
+\begin{equation*}
+ \textbf{L}^{-1}\left(\dfrac{\partial y}{\partial x}\right) = \textbf{L}^{-1} y
+  \end{equation*}
+  
+  \begin{equation*}
+  \int_0^{x}\dfrac{\partial y}{\partial x} = \textbf{L}^{-1} y
+\end{equation*} 
+
+Integrando o lado esquerdo,
+
+ \begin{equation*}
+  y(x) - y(0) = \textbf{L}^{-1} y
+\end{equation*} 
+
+ \begin{equation*}
+  y(x) = y(0) + \textbf{L}^{-1} y
+\end{equation*} 
+ 
+ De acordo com a equação (2.6) obtêm-se:
+ 
+  \begin{equation*}
+  y_{0} +y_{1} + y_{2} + ... + y_{n}  = y(0) + \textbf{L}^{-1}( y_{0} +y_{1} + y_{2} + ... + y_{n})
+\end{equation*}
+
+É possível observar que não será utilizado os polinômios de Adomian $A_{n}$  devido ao fato da equação ser inteiramente linear.
+A partir deste momento basta comparar o lado esquerdo da equação acima com o lado direito da mesma e aplicar o operador inverso:
+
+\begin{equation*}
+  y_{0} = y(0) = 1
+\end{equation*}
+
+\begin{equation*}
+  y_{1} = \textbf{L}^{-1} (y_{0})
+\end{equation*}
+
+\begin{equation*}
+  y_{2} = \textbf{L}^{-1} (y_{1})
+\end{equation*}
+
+\begin{equation*}
+  y_{3} = \textbf{L}^{-1} (y_{2})
+\end{equation*}
+
+\begin{equation*}
+  ...
+\end{equation*}
+
+ \begin{equation*}
+  y_{n} = \textbf{L}^{-1} (y_{n} - 1)
+\end{equation*}
+
+Aplicando o operador inverso para o $y_{1}$, 
+
+\begin{equation*}
+  y_{1} = \textbf{L}^{-1} (y_{0})
+\end{equation*}
+\begin{equation*}
+  y_{1} = \textbf{L}^{-1}(1)
+\end{equation*}
+\begin{equation*}
+  y_{1} =\int_0^{x} 1dx
+\end{equation*}
+\begin{equation*}
+  y_{1} = x
+\end{equation*}
+
+Aplicando o operador inverso para o $y_{2}$,
+
+\begin{equation*}
+  y_{2} = \textbf{L}^{-1} (y_{1})
+\end{equation*}
+\begin{equation*}
+  y_{1} = \textbf{L}^{-1}(x)
+\end{equation*}
+\begin{equation*}
+  y_{1} =\int_0^{x} xdx
+\end{equation*}
+\begin{equation*}
+  y_{2} = \frac{x^{2}}{2}
+\end{equation*}
+
+Aplicando o operador inverso para o $y_{3}$,
+
+\begin{equation*}
+  y_{3} = \textbf{L}^{-1} (y_{2})
+\end{equation*}
+\begin{equation*}
+  y_{3} = \textbf{L}^{-1}\left(\frac{x^{2}}{2}\right)
+\end{equation*}
+\begin{equation*}
+  y_{3} =\int_0^{x}\frac{x^{2}}{2}dx
+\end{equation*}
+\begin{equation*}
+  y_{3} = \frac{x^{3}}{2.3}
+\end{equation*}
+
+
+Em seguida, obtêm-se a série:
+
+\begin{equation*}
+  y(x) = y_{0} +y_{1} + y_{2} + ... + y_{n} 
+\end{equation*}
+
+\begin{equation*}
+  y(x) = 1 + x + \frac{x^{2}}{2} +  \frac{x^{3}}{2.3} + ...+ \sum_{n=0}^{\infty}\frac{x^{n}}{n!} = e^{x}
+\end{equation*}
+
+\subsection{Exemplo 2}
+
+
+Considere a seguinte equação não-linear:
+
+\begin{equation*}
+  y' = y^{2}
+\end{equation*}
+Com a condição inicial y(0) = 1.
+
+\section{Método da decomposição para várias dimensões}
+exemplos..
+
+
+\section{Aplicações em Física}
+
+pegar do primeiro livro
+
+
+\chapter[Método da Decomposição e a Equação do calor]{Método da Decomposição e a Equação do calor}
+
